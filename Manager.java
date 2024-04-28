@@ -10,4 +10,7 @@ public class Manager extends Employee{
         this.firstWorkYear = firstWorkYear;
         this.goalList = goalList;
     }
+    public static void addGoals(Goal goal){
+        goalList.add(goal);
+    }
 }
