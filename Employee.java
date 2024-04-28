@@ -10,4 +10,5 @@ public class Employee {
         this.socialSecurityNr = socialSecurityNr;
         this.firstWorkYear = firstWorkYear;
     }
+
 }

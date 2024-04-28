@@ -10,5 +10,8 @@ public Developer(String fName, String lName, String adress, String email, String
     this.socialSecurityNr = socialSecurityNr;
     this.firstWorkYear = firstWorkYear;
     this.knownTechnologies = knownTechnologies;
-}
+ }
+ public static void addTechnology(Technology tech){
+     knownTechnologies.add(tech);
+ }
 }
