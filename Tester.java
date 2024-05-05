@@ -1,16 +1,12 @@
-public class Tester extends Employee{
-    private ArrayList<String> knownTests;
+import java.util.ArrayList;
 
-    public Tester(String fName, String lName, String adress, String email, String socialSecurityNr, int firstWorkYear,ArrayList<String> knownTests) {
-        this.fName = fName;
-        this.lName = lName;
-        this.adress = adress;
-        this.email = email;
-        this.socialSecurityNr = socialSecurityNr;
-        this.firstWorkYear = firstWorkYear;
-        this.knownTests = knownTests;
+public class Tester extends Employee{
+    public ArrayList<String> knownTests = new ArrayList<>();
+
+    public Tester(String fName, String lName, String adress, String email, String socialSecurityNr, int firstWorkYear) {
+        super(fName, lName, adress, email, socialSecurityNr, firstWorkYear);
     }
-    public static void addTestType(String test){
-        knownTests.add(test);
+    public void addTestType(String test){
+        this.knownTests.add(test);
     }
 }

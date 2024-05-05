@@ -1,16 +1,13 @@
-public class Manager extends Employee{
-    private ArrayList<Goal> goalList;
+import java.util.ArrayList;
 
-    public Developer(String fName, String lName, String adress, String email, String socialSecurityNr, int firstWorkYear,ArrayList<Goal> goalList) {
-        this.fName = fName;
-        this.lName = lName;
-        this.adress = adress;
-        this.email = email;
-        this.socialSecurityNr = socialSecurityNr;
-        this.firstWorkYear = firstWorkYear;
-        this.goalList = goalList;
+public class Manager extends Employee{
+    public ArrayList<Goal> goalList = new ArrayList<>();
+
+    public Manager(String fName, String lName, String adress, String email, String socialSecurityNr, int firstWorkYear) {
+        super(fName, lName, adress, email, socialSecurityNr, firstWorkYear);
     }
-    public static void addGoals(Goal goal){
-        goalList.add(goal);
+
+    public void addGoals(Goal goal){
+        this.goalList.add(goal);
     }
 }
