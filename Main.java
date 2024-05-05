@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {/*
+    public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<>();
 // Creating and adding developers
         Developer dev = new Developer("John", "Doe", "New York", "john@doe.com", "123456789", 2020);
@@ -24,8 +24,5 @@ public class Main {
         for (Employee employee : employees) {
             totalAmount += employee.calculateSalary();
         }
-        System.out.println("Total amount to be paid this month: " + totalAmount + " USD");*/
-        Developer dev = new Developer("John", "Doe", "New York", "john@doe.com", "123456789", 2020);
-        dev.calculateSalary();
-    }
-}
+        System.out.println("Total amount to be paid this month: " + totalAmount + " USD");
+}}
